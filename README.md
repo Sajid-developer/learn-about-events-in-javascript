@@ -207,3 +207,9 @@ document.getElementById("child").addEventListener("click", () => {
 ```
 
 ---
+
+## Show your support
+
+If you find it helpful in your learning journey then kindly give a star ⭐ to this repo to help others discover it.
+
+Thanks for reading 🙏🏼.
