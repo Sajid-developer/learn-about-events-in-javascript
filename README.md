@@ -1,7 +1,7 @@
 # 🧠 Learn about Events In JavaScript
 
 ## What is a JavaScript Event?
-A JavaScript event is something that happens in the browser — like clicking a button, typing in a textbox, loading a page, or moving your mouse.
+A JavaScript `event` is something that happens in the browser — like clicking a button, typing in a textbox, loading a page, or moving your mouse.
 
 JavaScript allows you to respond to these events using event listeners.
 
@@ -22,7 +22,7 @@ JavaScript allows you to respond to these events using event listeners.
 
 ## 🔧 How to Handle Events in JavaScript
 
-✅ 1. Using onclick or other attributes (HTML way):
+✅ 1. Using `onclick` or other attributes (HTML way):
 
 ```html 
 
@@ -37,3 +37,21 @@ JavaScript allows you to respond to these events using event listeners.
 ```
 
 ---
+
+✅ 2. Using `addEventListener()` (Recommended Modern Way):
+
+```html 
+
+<button id="btn">Click Me</button>
+
+<script>
+  const button = document.getElementById("btn");
+
+  button.addEventListener("click", function() {
+    alert("Button clicked!");
+  });
+</script>
+
+```
+
+Note : `addEventListener()` is flexible, supports multiple handlers, and separates HTML from JS.
