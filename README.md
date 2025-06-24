@@ -7,16 +7,24 @@ JavaScript allows you to respond to these events using event listeners.
 
 ## 🎯 Examples of Events:
 
-| Event       | Description                      |
-| ----------- | -------------------------------- |
-| `click`     | When a user clicks an element    |
-| `mouseover` | When the mouse hovers over       |
-| `mouseout`  | When the mouse leaves an element |
-| `keydown`   | When a key is pressed            |
-| `input`     | When input value changes         |
-| `submit`    | When a form is submitted         |
-| `load`      | When the page is fully loaded    |
-| `scroll`    | When the page is scrolled        |
+| Event Name     | Trigger Condition                        | Common Use Case                          | Example Listener                            |
+|----------------|------------------------------------------|------------------------------------------|---------------------------------------------|
+| `click`        | When an element is clicked               | Buttons, links, interactive elements     | `element.addEventListener('click', ...)`    |
+| `dblclick`     | When an element is double-clicked        | Zooming, custom action triggers          | `element.addEventListener('dblclick', ...)` |
+| `mouseover`    | When mouse enters an element             | Hover effects, tooltips                  | `element.addEventListener('mouseover', ...)`|
+| `mouseout`     | When mouse leaves an element             | Revert hover changes                     | `element.addEventListener('mouseout', ...)` |
+| `mousedown`    | When mouse button is pressed down        | Drag, hold actions                       | `element.addEventListener('mousedown', ...)`|
+| `mouseup`      | When mouse button is released            | End of drag                              | `element.addEventListener('mouseup', ...)`  |
+| `keydown`      | When a key is pressed                    | Shortcuts, typing detection              | `document.addEventListener('keydown', ...)` |
+| `keyup`        | When a key is released                   | Confirm input after key release          | `document.addEventListener('keyup', ...)`   |
+| `input`        | When value of input/textarea changes     | Live validation, live search             | `input.addEventListener('input', ...)`      |
+| `change`       | When input value changes and loses focus | Dropdowns, checkboxes                    | `input.addEventListener('change', ...)`     |
+| `submit`       | When a form is submitted                 | Form handling, validation                | `form.addEventListener('submit', ...)`      |
+| `load`         | When page or image is fully loaded       | Init scripts after everything loads      | `window.addEventListener('load', ...)`      |
+| `scroll`       | When user scrolls the page               | Infinite scroll, animations              | `window.addEventListener('scroll', ...)`    |
+| `focus`        | When an element gets focus               | Input field styling, form interactions   | `input.addEventListener('focus', ...)`      |
+| `blur`         | When an element loses focus              | Hide hints, validate input               | `input.addEventListener('blur', ...)`       |
+
 
 ---
 
