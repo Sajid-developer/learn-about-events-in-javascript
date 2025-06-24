@@ -19,4 +19,18 @@ JavaScript allows you to respond to these events using event listeners.
 | `load`      | When the page is fully loaded    |
 | `scroll`    | When the page is scrolled        |
 
+## 🔧 How to Handle Events in JavaScript
 
+✅ 1. Using onclick or other attributes (HTML way):
+
+```html 
+
+<button onclick="sayHello()">Click Me</button>
+
+<script>
+  function sayHello() {
+    alert("Hello Sajid!");
+  }
+</script>
+
+```
