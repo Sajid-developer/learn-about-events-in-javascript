@@ -58,10 +58,145 @@ Note : `addEventListener()` is flexible, supports multiple handlers, and separat
 
 ---
 
-💡 Event Listener Syntax:
+## 💡 Event Listener Syntax:
 
-```js 
+```javascript 
 
 element.addEventListener("eventType", callbackFunction);
 
 ```
+
+---
+
+## 🧪 Common Event Examples
+
+### ☑️ Click Event
+
+```javascript 
+
+button.addEventListener("click", () => {
+  console.log("Clicked!");
+});
+
+```
+
+### ☑️ Mouseover and Mouseout
+
+```javascript 
+
+element.addEventListener("mouseover", () => {
+  element.style.color = "red";
+});
+
+element.addEventListener("mouseout", () => {
+  element.style.color = "black";
+});
+
+```
+
+### ☑️ Keyboard Events
+
+```javascript 
+
+document.addEventListener("keydown", (event) => {
+  console.log("Key pressed:", event.key);
+});
+
+```
+
+### ☑️ Input Event
+
+```html 
+
+<input type="text" id="name" placeholder="Type your name" />
+
+```
+
+```javascript 
+
+const input = document.getElementById("name");
+
+input.addEventListener("input", () => {
+  console.log("You typed:", input.value);
+});
+
+```
+
+### ☑️ Form Submit Event
+
+```html 
+
+<form id="myForm">
+  <input type="text" />
+  <button type="submit">Submit</button>
+</form>
+
+```
+
+```javascript 
+
+document.getElementById("myForm").addEventListener("submit", function(e) {
+  e.preventDefault(); // Prevent page reload
+  alert("Form submitted!");
+});
+
+```
+
+---
+
+## 📥 Event Object
+
+Every event has a built-in object that gives you details like:
+
+- `event.target` → The actual element
+
+- `event.key` → The key pressed
+
+- `event.preventDefault()` → Stops default behavior
+
+- `event.stopPropagation()` → Stops event bubbling
+
+
+```javascript 
+
+button.addEventListener("click", function(event) {
+  console.log(event.target); // The clicked element
+});
+
+```
+
+---
+
+
+## 🔁 Event Bubbling & Capturing
+
+### 🔹 Event Bubbling:
+
+- Events bubble up from child to parent.
+
+- Default behavior in JavaScript.
+
+### 🔹 Example:
+
+```html 
+
+<div id="parent">
+  <button id="child">Click Me</button>
+</div>
+
+```
+
+```javascript 
+
+document.getElementById("parent").addEventListener("click", () => {
+  console.log("Parent clicked");
+});
+
+document.getElementById("child").addEventListener("click", () => {
+  console.log("Child clicked");
+});
+// Output: "Child clicked", then "Parent clicked"
+
+```
+
+---
