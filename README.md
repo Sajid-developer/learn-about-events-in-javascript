@@ -44,7 +44,6 @@ JavaScript allows you to respond to these events using event listeners.
 
 ```
 
----
 
 ✅ 2. Using `addEventListener()` (Recommended Modern Way):
 
