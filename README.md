@@ -55,3 +55,13 @@ JavaScript allows you to respond to these events using event listeners.
 ```
 
 Note : `addEventListener()` is flexible, supports multiple handlers, and separates HTML from JS.
+
+---
+
+💡 Event Listener Syntax:
+
+```js 
+
+element.addEventListener("eventType", callbackFunction);
+
+```
